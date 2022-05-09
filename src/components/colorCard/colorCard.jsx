@@ -4,8 +4,7 @@ export default function ColorCard(props){
     return (
         <div 
             onClick={props.onClick} 
-            className={`colorCard ${props.isFlashing ? "flash":""}`} 
-            style={{backgroundColor: props.color}}>
+            className={`colorCard ${props.color} ${props.isFlashing ? "flash":""}`} >
         </div>
     )
 }

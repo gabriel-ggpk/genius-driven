@@ -34,5 +34,8 @@
 --> criar o estado inicial
     Criar componente gameContainer, sem nada por enquanto
     Criar componente colorCard, para representar os botões de cores diferentes
-    Adicionar 4 colorCard a um wrapper dentro do gameContainer, usando flexrow e tamanhos fixos
+    Adicionar 4 colorCard a um wrapper dentro do gameContainer, usando grid e gridGap
     Organizar App para mostrar o gameContainer no meio
+    colocar border-radius em cada card colorido
+    Adicionar botão de play e coloca-lo no meio dos cards
+    
