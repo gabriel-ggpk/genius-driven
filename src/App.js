@@ -1,11 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import GameContainer from './components/gameContainer/gameContainer';
 function App() {
   return (
-    <TopBar/>
+    <div className='App'>
     <GameContainer/>
-    <BottomBar/>
+    </div>
+  
   );
 }
 
