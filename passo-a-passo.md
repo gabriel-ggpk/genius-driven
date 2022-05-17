@@ -14,28 +14,29 @@
 --> adicionar uma cor -> mostrar todas as cores -> player escolhe as cores
 
 
-### estados do Game container
--->Score
-    --> States
-        isDisplay: boolean
-        colors: String[]
-        score: number
--->UserPlay
-    --> States
-        userState:boolean
-        remainingColors: String[]
--->FailState
-    -->
 
 
 
 
 ### Passos para implementação
---> criar o estado inicial
+--> criar os componentes iniciais
     Criar componente gameContainer, sem nada por enquanto
     Criar componente colorCard, para representar os botões de cores diferentes
     Adicionar 4 colorCard a um wrapper dentro do gameContainer, usando grid e gridGap
     Organizar App para mostrar o gameContainer no meio
     colocar border-radius em cada card colorido
     Adicionar botão de play e coloca-lo no meio dos cards
+
+--> Criar hooks
+    começamos pelo estado isOn(para saber quando  ojogo esta sendo jogado)
+    criaremos o gameState, um estado que vai conter as principais informações do jogo durante o funcionamento, seu valor base sera um obj initPlay
+    Faremos uma renderização condicional para alternar entre o botão play e a pontuação
+    vamos preparar os useEffects para adicionar cores aleatorias para a lista
+    e agora um useEffect para mostrar as cores que estão na lista em sequencia (usaremos setInterval e atualização funcional)
+    finalmente vamos começar a implementar o turno do jogador
+    apos mostrar todas as cores, clonaremos o array de cores para o array de cores do jogador e daremos true em playerTurn
+    caso o playerTurn seja true, ao clicar em uma cor, se aquela cor for correspondente a sequencia, iremos tirar a cor da sequencia,
+    caso contrario o jogo dara game over
+    ao acertar todas as cores, iremos passar para o display turn, adicionando uma nova cor ao array e repetindo o processo de mostrar todas as cores
+
     

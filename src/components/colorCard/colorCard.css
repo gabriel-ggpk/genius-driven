@@ -2,21 +2,26 @@
     height: 300px;
     width: 300px;
 }
-.flash {
-}
+
 .red {
-  background-color: red;
+  background-color: darkred;
   border-top-right-radius: 100%;
 }
 .blue {
-  background-color: blue;
+  background-color: darkblue;
   border-bottom-right-radius: 100%;
 }
 .green {
-  background-color: green;
+  background-color: darkgreen;
   border-top-left-radius: 100%;
 }
 .yellow {
-  background-color: yellow;
+  background-color: rgb(100, 100, 0);
   border-bottom-left-radius: 100%;
+}
+.flash {
+  filter: brightness(250%);
+}
+.active:active{
+  filter: brightness(250%);
 }
